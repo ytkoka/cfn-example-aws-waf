@@ -4,6 +4,13 @@ Parameters:
   WebACLName:
     Type: String
     Description: "WebACL Name"
+  Scope:
+    Type: String
+    Default: CLOUDFRONT
+    AllowedValues:
+    - CLOUDFRONT
+    - REGIONAL
+    Description: "CLOUDFRONT or REGIONAL"
 Resources:
   LogGroup:
     Type: AWS::Logs::LogGroup
@@ -15,7 +22,7 @@ Resources:
     Type: AWS::WAFv2::WebACL
     Properties:
       Name: !Sub ${WebACLName}
-      Scope: CLOUDFRONT
+      Scope: !Sub ${Scope}
       DefaultAction:
         Allow: {}
       Description: "Baseline and Rate-based rules"
