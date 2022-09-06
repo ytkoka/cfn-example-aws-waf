@@ -66,7 +66,7 @@ Resources:
             CloudWatchMetricsEnabled: true
             SampledRequestsEnabled: true
             MetricName: AWS-AWSManagedRulesCommonRuleSet
-        - Name: "AWSManagedRulesKnownBadInputsRule"
+        - Name: "AWS-AWSManagedRulesKnownBadInputsRuleSet"
           Priority: 1
           Statement:
             ManagedRuleGroupStatement:
@@ -86,7 +86,7 @@ Resources:
             None: {}
           VisibilityConfig:
             CloudWatchMetricsEnabled: true
-            MetricName: "AWSManagedRulesKnownBadInputsRuleSet"
+            MetricName: "AWS-AWSManagedRulesKnownBadInputsRuleSet"
             SampledRequestsEnabled: true
         - Name: "RateBasedRule"
           Action:
