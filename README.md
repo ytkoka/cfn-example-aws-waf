@@ -13,10 +13,14 @@ To do the installation, click the Launch Stack button below and fill in the requ
 
 
 
+[![launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)][1]
 [Sample template](/aws-waf-template.yaml)
 
-[![launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)][1]
-
 [1]: https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=cfn-example-waf&templateURL=https://s3.amazonaws.com/ytkoka-resources/cfn-example-aws-waf/aws-waf-template.yaml
+
+[![launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)][2]
+[Sample template with the log filter as COUNT, BLOCK and EXCLUDED_AS_COUNT](/aws-waf-template-loggingfilter.yaml)
+
+[2]: https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=cfn-example-waf&templateURL=https://s3.amazonaws.com/ytkoka-resources/cfn-example-aws-waf/aws-waf-template-loggingfilter.yaml
 
 This template does not include the AWS resource to associate with WebACL. Please associate your AWS resource (CloudFront, ALB, API gateway )to the WebACL created by this template. [see here for instructions](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-associating-aws-resource.html)
