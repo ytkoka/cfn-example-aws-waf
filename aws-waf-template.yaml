@@ -75,9 +75,11 @@ Resources:
               ExcludedRules:
                 - Name: ExploitablePaths_URIPATH
                 - Name: Host_localhost_HEADER
-                - Name: Log4JRCE
+                - Name: Log4JRCE_QUERYSTRING
+                - Name: Log4JRCE_BODY
+                - Name: Log4JRCE_URIPATH
+                - Name: Log4JRCE_HEADER
                 - Name: PROPFIND_METHOD
-                - Name: ExploitablePaths_URIPATH
                 - Name: JavaDeserializationRCE_BODY
                 - Name: JavaDeserializationRCE_URIPATH
                 - Name: JavaDeserializationRCE_QUERYSTRING
