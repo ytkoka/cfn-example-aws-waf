@@ -37,29 +37,74 @@ Resources:
             ManagedRuleGroupStatement:
               VendorName: AWS
               Name: AWSManagedRulesCommonRuleSet
-              ExcludedRules:
-                - Name: NoUserAgent_HEADER
-                - Name: UserAgent_BadBots_HEADER
-                - Name: SizeRestrictions_QUERYSTRING
-                - Name: SizeRestrictions_Cookie_HEADER
-                - Name: SizeRestrictions_BODY
-                - Name: SizeRestrictions_URIPATH
-                - Name: EC2MetaDataSSRF_BODY
-                - Name: EC2MetaDataSSRF_COOKIE
-                - Name: EC2MetaDataSSRF_URIPATH
-                - Name: EC2MetaDataSSRF_QUERYARGUMENTS
-                - Name: GenericLFI_QUERYARGUMENTS
-                - Name: GenericLFI_URIPATH
-                - Name: GenericLFI_BODY
-                - Name: RestrictedExtensions_URIPATH
-                - Name: RestrictedExtensions_QUERYARGUMENTS
-                - Name: GenericRFI_QUERYARGUMENTS
-                - Name: GenericRFI_BODY
-                - Name: GenericRFI_URIPATH
-                - Name: CrossSiteScripting_COOKIE
-                - Name: CrossSiteScripting_QUERYARGUMENTS
-                - Name: CrossSiteScripting_BODY
-                - Name: CrossSiteScripting_URIPATH
+              RuleActionOverrides:
+              - ActionToUse:
+                  Count: {}
+                Name: NoUserAgent_HEADER
+              - ActionToUse:
+                  Count: {}
+                Name: UserAgent_BadBots_HEADER
+              - ActionToUse:
+                  Count: {}
+                Name: SizeRestrictions_QUERYSTRING
+              - ActionToUse:
+                  Count: {}
+                Name: SizeRestrictions_Cookie_HEADER
+              - ActionToUse:
+                  Count: {}
+                Name: SizeRestrictions_BODY
+              - ActionToUse:
+                  Count: {}
+                Name: SizeRestrictions_URIPATH
+              - ActionToUse:
+                  Count: {}
+                Name: EC2MetaDataSSRF_BODY
+              - ActionToUse:
+                  Count: {}
+                Name: EC2MetaDataSSRF_COOKIE
+              - ActionToUse:
+                  Count: {}
+                Name: EC2MetaDataSSRF_URIPATH
+              - ActionToUse:
+                  Count: {}
+                Name: EC2MetaDataSSRF_QUERYARGUMENTS
+              - ActionToUse:
+                  Count: {}
+                Name: GenericLFI_QUERYARGUMENTS
+              - ActionToUse:
+                  Count: {}
+                Name: GenericLFI_URIPATH
+              - ActionToUse:
+                  Count: {}
+                Name: GenericLFI_BODY
+              - ActionToUse:
+                  Count: {}
+                Name: RestrictedExtensions_URIPATH
+              - ActionToUse:
+                  Count: {}
+                Name: RestrictedExtensions_QUERYARGUMENTS
+              - ActionToUse:
+                  Count: {}
+                Name: GenericRFI_QUERYARGUMENTS
+              - ActionToUse:
+                  Count: {}
+                Name: GenericRFI_BODY
+              - ActionToUse:
+                  Count: {}
+                Name: GenericRFI_URIPATH
+              - ActionToUse:
+                  Count: {}
+                Name: CrossSiteScripting_COOKIE
+              - ActionToUse:
+                  Count: {}
+                Name: CrossSiteScripting_QUERYARGUMENTS
+              - ActionToUse:
+                  Count: {}
+                Name: CrossSiteScripting_BODY
+              - ActionToUse:
+                  Count: {}
+                Name: CrossSiteScripting_URIPATH
+              ExcludedRules: []
           OverrideAction:
             None: {}
           VisibilityConfig:
@@ -72,18 +117,44 @@ Resources:
             ManagedRuleGroupStatement:
               VendorName: "AWS"
               Name: "AWSManagedRulesKnownBadInputsRuleSet"
-              ExcludedRules:
-                - Name: ExploitablePaths_URIPATH
-                - Name: Host_localhost_HEADER
-                - Name: Log4JRCE_QUERYSTRING
-                - Name: Log4JRCE_BODY
-                - Name: Log4JRCE_URIPATH
-                - Name: Log4JRCE_HEADER
-                - Name: PROPFIND_METHOD
-                - Name: JavaDeserializationRCE_BODY
-                - Name: JavaDeserializationRCE_URIPATH
-                - Name: JavaDeserializationRCE_QUERYSTRING
-                - Name: JavaDeserializationRCE_HEADER
+              RuleActionOverrides:
+              - ActionToUse:
+                  Count: {}
+                Name: NoUserAgent_HEADER
+              - ActionToUse:
+                  Count: {}
+                Name: ExploitablePaths_URIPATH
+              - ActionToUse:
+                  Count: {}
+                Name: Host_localhost_HEADER
+              - ActionToUse:
+                  Count: {}
+                Name: Log4JRCE_QUERYSTRING
+              - ActionToUse:
+                  Count: {}
+                Name: Log4JRCE_BODY
+              - ActionToUse:
+                  Count: {}
+                Name: Log4JRCE_URIPATH
+              - ActionToUse:
+                  Count: {}
+                Name: Log4JRCE_HEADER
+              - ActionToUse:
+                  Count: {}
+                Name: PROPFIND_METHOD
+              - ActionToUse:
+                  Count: {}
+                Name: JavaDeserializationRCE_BODY
+              - ActionToUse:
+                  Count: {}
+                Name: JavaDeserializationRCE_URIPATH
+              - ActionToUse:
+                  Count: {}
+                Name: JavaDeserializationRCE_QUERYSTRING
+              - ActionToUse:
+                  Count: {}
+                Name: JavaDeserializationRCE_HEADER
+              ExcludedRules: []
           OverrideAction:
             None: {}
           VisibilityConfig:
